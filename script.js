@@ -21,7 +21,7 @@ tabs.forEach(tab => {
                 section.style.display = 'block';
                 setTimeout(() => {
                     section.style.opacity = 1;
-                    section.style.transition = 'opacity 0.3s ease';
+                    section.style.transition = 'opacity 0.5s ease';
                     // Make subsections visible if this is the bookshelf section
                     if (section.id === 'bookshelf') {
                         document.querySelectorAll('#currently-reading, #read-books').forEach(subsection => {
