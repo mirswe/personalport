@@ -1,0 +1,645 @@
+/* global styles */
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    /* sets the default font for the entire page */
+    margin: 0;
+    padding: 0;
+    /* removes default spacing around the body */
+}
+
+
+/* header section */
+header {
+    text-align: center;
+    /* centers the text in the header */
+    padding: 20px;
+    /* adds space inside the header */
+    background-color: #ffffff;
+    /* sets the background color to white */
+}
+
+.header-card {
+    display: flex;
+    /* uses flexbox for layout */
+    align-items: center;
+    /* vertically centers items */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /* rounds the corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* adds a subtle shadow */
+}
+
+.header-info {
+    flex: 1;
+    color: #525252;
+    font-weight: 450;
+    /* allows this element to grow and fill space */
+}
+
+.header-links {
+    display: flex;
+    justify-content: center;
+    /* centers the links horizontally */
+    gap: 20px;
+    /* adds space between links */
+    margin-top: 20px;
+}
+
+.header-links a {
+    text-decoration: none;
+    /* removes underline from links */
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    /* smooth color change on hover */
+    position: relative;
+    /* for positioning the underline effect */
+}
+
+.header-links a:hover {
+    color: #333; /* Default hover color */
+}
+
+.header-links a[href*="linkedin"]:hover {
+    color: #0077b5; /* linkedin blue */
+}
+
+.header-links a[href*="github"]:hover {
+    color: #000000; /* github black */
+}
+
+.header-links a[href*="gmail"]:hover {
+    color: #EA4335; /* gmail red */
+}
+
+.header-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #333; /* Default underline color */
+    transform: scaleX(0);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.header-links a:hover::after {
+    transform: scaleX(1);
+}
+
+.header-links a[href*="linkedin"]:hover::after {
+    background-color: #0077b5;
+}
+
+.header-links a[href*="github"]:hover::after {
+    background-color: #333;
+}
+
+.header-links a[href*="gmail"]:hover::after {
+    background-color: #EA4335;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    color: #333;
+    /* adds space below the h1 */
+}
+
+header p {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+header nav ul {
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    /* makes list items appear in a line */
+    margin-right: 5px;
+}
+
+header nav ul li:not(:last-child)::after {
+    content: " ";
+    margin-left: 5px;
+    /* adds space after each list item except the last */
+}
+
+
+/* nav and tabs */
+nav ul {
+    list-style-type: none;
+    /* removes bullet points */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+section {
+    padding: 20px;
+    text-align: left;
+}
+
+.tabs {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tabs ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    display: inline-flex; 
+    justify-content: center;
+    /* centers the tabs */
+}
+
+.tabs ul li {
+    margin-right: 10px;
+}
+
+.tabs ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* smooth transition for hover effect */
+}
+
+.tabs ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform: scaleX(0);
+    /* initially hides the underline */
+    transition: transform 0.3s ease;
+}
+
+.tabs ul li a:hover {
+    color: #000;
+}
+
+.tabs ul li a:hover::before {
+    transform: scaleX(1);
+    /* shows the underline on hover */
+}
+
+.tabs ul li a.active {
+    color: #000;
+}
+
+.tabs ul li a.active::before {
+    transform: scaleX(1);
+    /* shows the underline for active tab */
+}
+
+/* about me & skills section */
+#about h2 {
+    text-align: left;
+    margin-bottom: 0px;
+    color: #333;
+    font-size: 22px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    /* adds space between flex items */
+}
+
+.about-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    width: 100%;
+    max-width: 1300px;
+    text-align: left;
+}
+
+.skills {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.skill-list {
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    /* allows items to wrap to next line */
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill-list li {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.skill-list .icon {
+    width: 20px;  
+    height: 20px;  
+    margin-right: 6px;
+}
+
+/* work experience and education */
+.work-experience {
+    margin-top: 40px;
+}
+
+.work-experience h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.experience-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.experience-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.experience-header h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.experience-header .company {
+    font-size: 16px;
+    color: #666;
+}
+
+.date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.responsibilities {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.responsibilities li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.responsibilities li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #333;
+}
+
+.work-experience, .education {
+    margin-top: 40px;
+}
+
+.work-experience h2, .education h2 {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.education {
+    margin-top: 40px;
+}
+
+.education h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.education-item {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.education-logo {
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.education-info {
+    flex-grow: 1;
+}
+
+.education-info h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 5px 0;
+}
+
+.education-info .school {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 5px 0;
+}
+
+.education-info .date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.achievements {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.achievements li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.achievements li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #333;
+}
+
+
+/* projects section */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image img {
+    width: 25%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-info h3 {
+    margin-top: 0;
+}
+
+.project-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.project-links a:hover {
+    color: #000;
+}
+
+.project-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.project-links a:hover::after {
+    transform: scaleX(1);
+}
+
+.project-links span {
+    color: #333;
+}
+
+/* animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+        /* starts slightly above final position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* ends at final position */
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    /* applies the fadeIn animation */
+}
+
+.delay {
+    animation-delay: 0.5s;
+    /* delays the start of the animation */
+}
+
+/* bookshelf section */
+#bookshelf h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 22px;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.book-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-image {
+    flex: 0 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.book-image svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.book-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.book-info h3 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.book-info h3 a:hover {
+    color: #0077b5;
+}
+
+.book-details {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.book-details .separator {
+    margin: 0 5px;
+}
+
+.book-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Blog section */
+#blog h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 22px;
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.blog-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.blog-content h3 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.blog-content h3 a:hover {
+    color: #0077b5;
+}
+
+.blog-meta {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.blog-preview {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
