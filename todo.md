@@ -8,9 +8,10 @@
         - [ ] creating comments around the html, css, and js to explain what each section is for and how it works
 
         ### about me page
-- [x] fill out education and experience
-- [x] add skills
-- [x] make hover links like linedin gmail and github the same cover as the brand
+    - [x] fill out education and experience
+    - [x] add skills
+    - [x] make hover links like linedin gmail and github the same cover as the brand
+    - [ ] fix the education logo (looks shrunk in)
 
         ### projects page
         - [x] think about how to display projects
@@ -29,17 +30,10 @@
         - [ ] maybe adding a sort by name feature at the top of the page
 
         ### blog page
-        - [ ] figure out how im going to work the blog page
+        - [x] figure out how im going to work the blog page
             - possibly a grid of blog posts with a preview of each one
             - maybe looking up a site to host the blog posts
-                - [ ] check out medium
-                - [ ] check out wordpress
-                - [ ] check out squarespace
-                - [ ] check out wix
-                - [ ] check out weebly
-                - [ ] check out squarespace
-                - [ ] check out wix
-                - [ ] check out weebly
+                - dev.to works perfectly
 
         ### notepad page
         - might not even need this, but it would be a nice place to dump ideas

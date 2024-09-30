@@ -208,7 +208,7 @@ section {
 
 /* about me & skills section */
 #about h2 {
-    text-align: left;
+    text-align: center;
     margin-bottom: 0px;
     color: #333;
     font-size: 22px;
@@ -228,8 +228,8 @@ section {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     padding: 15px;
     width: 100%;
-    max-width: 1300px;
-    text-align: left;
+    max-width: 3300px;
+    text-align: center;
 }
 
 .skills {
