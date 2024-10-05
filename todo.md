@@ -11,7 +11,7 @@
     - [x] fill out education and experience
     - [x] add skills
     - [x] make hover links like linedin gmail and github the same cover as the brand
-    - [ ] fix the education logo (looks shrunk in)
+    - [x] fix the education logo (looks shrunk in)
 
         ### projects page
         - [x] think about how to display projects
@@ -19,6 +19,12 @@
             - [x] think about adding a card with a screenshot of the project on the left and a description, github link, and a live link on the right.
             - [x] maybe add a live link to the project if available
             - [ ] think about blurring out the bottom of the project card so that it looks like the page is continuos
+        - [ ] complete the projects and add the github and live links !
+            - [ ] movie recommender
+            - [ ] kirba nn
+            - [ ] maybe a 3rd one?
+
+        - [ ] possibly add a picture above the project
 
         ### bookshelf page
         - [x] figure out how to display books along with a huge svg of the book (placed to the left of the card)
