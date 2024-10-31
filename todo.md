@@ -6,12 +6,13 @@
         - [ ] think about adding a 404 page
         - [ ] integrate a smooth transition between pages (form about me to projects, and etc.)
         - [ ] creating comments around the html, css, and js to explain what each section is for and how it works
-
+        - [ ] add my linkedin profile picture to my site tab photo
         ### about me page
     - [x] fill out education and experience
     - [x] add skills
     - [x] make hover links like linedin gmail and github the same cover as the brand
     - [x] fix the education logo (looks shrunk in)
+    - [ ] fix the #about me and more
 
         ### projects page
         - [x] think about how to display projects
@@ -30,6 +31,8 @@
         - [x] figure out how to display books along with a huge svg of the book (placed to the left of the card)
         - [x] add a description to each book
         - [x] add a link to each book
+        ~~- [x] add an estimated read time beside the date~~
+        - [ ] instead of hashtags, do one word that best categorizes it, so we can later implement a category section
         - [ ] add a deeper description to each book
         - [ ] add more books (atomic habits, more ml books, the alchemist, deep work, etc.) maybe ml/prof research papers
         - [ ] maybe adding a "book of the month" and "currently reading" section
