@@ -1,12 +1,24 @@
 # Personal Portfolio Website
 
+## Session Todo
+~~- [x] adding dark mode function (prob not going to keep it on the site)~~
+    - added, but not going to keep i need to work on it more in depth
+~~- [ ] adding more books, maybe a blog, and planning how im going to change the project section~~
+    - wasn't able to do but could do later today
+~~- [x] changing the favicon~~
+    - changed it, but i need to fix it not showing
+
 ## Todo
 
         ### main functionality
         - [ ] think about adding a 404 page
+        - [ ] integrating with node js and learning routing
         - [ ] integrate a smooth transition between pages (form about me to projects, and etc.)
         - [ ] creating comments around the html, css, and js to explain what each section is for and how it works
         - [ ] add my linkedin profile picture to my site tab photo
+        - [ ] creating a dark mode
+        - [ ] think about experimentig/adding tailwind
+        - [ ] blurring and unblurring the bottom of the page as you scroll down
         ### about me page
     - [x] fill out education and experience
     - [x] add skills

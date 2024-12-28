@@ -27,7 +27,7 @@ function showSection(sectionId) {
 
     // update active tab
     tabs.forEach(tab => {
-        if (tab.getAttribute('href') === `#${sectionId}`) {
+        if (tab.getAttribute('href') === `${sectionId}`) {
             tab.classList.add('active');
         } else {
             tab.classList.remove('active');
@@ -37,7 +37,7 @@ function showSection(sectionId) {
 
 // function to set the hash in the URL
 function setHash(hash) {
-    history.pushState(null, null, hash);
+    history.replaceState(null, null, hash);
 }
 
 // event listener for tab clicks
@@ -46,17 +46,41 @@ tabs.forEach(tab => {
         e.preventDefault();
         const target = e.target.getAttribute('href').substring(1);
         showSection(target);
-        setHash(`#${target}`);
+        setHash(`${target}`);
     });
 });
 
-// check for hash in URL on page load
-window.addEventListener('load', () => {
-    const hash = window.location.hash.substring(1);
-    if (hash && document.getElementById(hash)) {
-        showSection(hash);
-    } else {
-        showSection('about');
-        setHash('#about');
-    }
+// Add a popstate event listener to handle browser back/forward buttons
+window.addEventListener('popstate', () => {
+    const hash = window.location.hash.substring(1) || 'about';
+    showSection(hash);
 });
+
+// Modify the load event listener
+window.addEventListener('load', () => {
+    const hash = window.location.hash.substring(1) || 'about';
+    showSection(hash);
+    setHash(`${hash}`);
+});
+
+// Dark mode toggle functionality
+// const darkModeToggle = document.getElementById('darkModeToggle');
+// const body = document.body;
+
+// // Check for saved dark mode preference
+// const darkMode = localStorage.getItem('darkMode');
+// if (darkMode === 'enabled') {
+//     body.classList.add('dark-mode');
+// }
+
+// // Toggle dark mode
+// darkModeToggle.addEventListener('click', () => {
+//     body.classList.toggle('dark-mode');
+    
+//     // Save preference
+//     if (body.classList.contains('dark-mode')) {
+//         localStorage.setItem('darkMode', 'enabled');
+//     } else {
+//         localStorage.setItem('darkMode', null);
+//     }
+// });

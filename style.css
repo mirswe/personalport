@@ -1,3 +1,16 @@
+/* default styles*/
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    /* Add more variables as needed */
+  }
+
+/* dark theme */
+  body.dark {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    /* Override more variables as needed */
+  }
 /* global styles */
 body {
     font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
@@ -653,3 +666,79 @@ section {
     color: #555;
     line-height: 1.6;
 }
+
+/* Dark mode toggle button */
+/* .dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .header-card,
+body.dark-mode .about-card,
+body.dark-mode .experience-item,
+body.dark-mode .education-item,
+body.dark-mode .project-card,
+body.dark-mode .book-card,
+body.dark-mode .blog-card {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .dark-mode-toggle {
+    background: rgba(30, 30, 30, 0.8);
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+    background: rgba(40, 40, 40, 0.9);
+}
+
+/* Sun and moon icon animation */
+.sun-and-moon {
+    transition: transform 0.5s ease;
+}
+
+.sun-and-moon > * {
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+
+body.dark-mode .sun-and-moon {
+    transform: rotate(180deg);
+}
+
+body.dark-mode .sun-beams {
+    transform: rotate(45deg);
+    opacity: 0;
+}
+
+.sun-beams {
+    stroke-width: 2px;
+    transform-origin: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+} */
