@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-## Session Todo
+## Session Todo 12/28
 ~~- [x] adding dark mode function (prob not going to keep it on the site)~~
     - added, but not going to keep i need to work on it more in depth
 ~~- [ ] adding more books, maybe a blog, and planning how im going to change the project section~~
@@ -11,6 +11,7 @@
 ## Todo
 
         ### main functionality
+        - [ ] remove or temp hide the experience page, just showing my education and my skills
         - [ ] think about adding a 404 page
         - [ ] integrating with node js and learning routing
         - [ ] integrate a smooth transition between pages (form about me to projects, and etc.)
