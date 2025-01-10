@@ -37,7 +37,8 @@ function showSection(sectionId) {
 
 // function to set the hash in the URL
 function setHash(hash) {
-    history.replaceState(null, null, hash);
+    // Only update URL state, don't change the actual URL
+    history.pushState(null, null, `#${hash}`);
 }
 
 // event listener for tab clicks
@@ -58,9 +59,12 @@ window.addEventListener('popstate', () => {
 
 // Modify the load event listener
 window.addEventListener('load', () => {
-    const hash = window.location.hash.substring(1) || 'about';
-    showSection(hash);
-    setHash(`${hash}`);
+    // Remove hash if it's in the URL to prevent direct path access
+    if (window.location.hash) {
+        history.replaceState(null, null, window.location.pathname);
+    }
+    
+    showSection('about'); // Always start with about section
 });
 
 // Dark mode toggle functionality

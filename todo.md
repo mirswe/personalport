@@ -11,6 +11,7 @@
 ## Todo
 
         ### main functionality
+        - [ ] remove or temp hide the experience page, just showing my education and my skills
         - [ ] think about adding a 404 page
         - [ ] integrating with node js and learning routing
         - [ ] integrate a smooth transition between pages (form about me to projects, and etc.)
@@ -24,7 +25,7 @@
     - [x] add skills
     - [x] make hover links like linedin gmail and github the same cover as the brand
     - [x] fix the education logo (looks shrunk in)
-    - [ ] fix the #about me and more
+    - [x] fix the #about me and more
 
         ### projects page
         - [x] think about how to display projects
