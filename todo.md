@@ -50,7 +50,12 @@
         - [ ] add more books (atomic habits, more ml books, the alchemist, deep work, etc.) maybe ml/prof research papers
         - [ ] maybe adding a "book of the month" and "currently reading" section
         - [ ] maybe adding a sort by name feature at the top of the page
-
+        #### books im going to add
+        ---------------------------
+        atomic habits
+        x deep work x
+        the alchemist
+        x machine learning engineering x
         ### blog page
         - [x] figure out how im going to work the blog page
             - possibly a grid of blog posts with a preview of each one
