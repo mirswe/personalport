@@ -1,0 +1,22 @@
+[33mfb0c357[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/features/experimental-12/28[m[33m, [m[1;32morigin[m[33m)[m HEAD@{0}: checkout: moving from main to origin/features/experimental-12/28
+[33m1c294cf[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{1}: checkout: moving from fb0c357539460c21243b10753a2b9f5207a4c3f2 to main
+[33mfb0c357[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/features/experimental-12/28[m[33m, [m[1;32morigin[m[33m)[m HEAD@{2}: checkout: moving from main to origin/features/experimental-12/28
+[33m1c294cf[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{3}: checkout: moving from 0322746f2d38dce42e8b02666b110183ea825804 to main
+[33m0322746[m[33m ([m[1;32mmy-saved-branch[m[33m)[m HEAD@{4}: commit: new books, new functionality, new skills in section
+[33md105401[m[33m ([m[1;31morigin/origin/features/experimental-12/28[m[33m)[m HEAD@{5}: checkout: moving from fb0c357539460c21243b10753a2b9f5207a4c3f2 to origin/origin/features/experimental-12/28
+[33mfb0c357[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/features/experimental-12/28[m[33m, [m[1;32morigin[m[33m)[m HEAD@{6}: checkout: moving from features/experimental-12/28 to origin/features/experimental-12/28
+[33mb19ab31[m[33m ([m[1;32mfeatures/experimental-12/28[m[33m)[m HEAD@{7}: commit: t
+[33mfb0c357[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/features/experimental-12/28[m[33m, [m[1;32morigin[m[33m)[m HEAD@{8}: commit: loads of stuff, working on hashes, fixing page loadtime, improving functionality, reworking project section, and adding more items to bookshelf
+[33m1c294cf[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{9}: checkout: moving from main to features/experimental-12/28
+[33m1c294cf[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{10}: checkout: moving from main to main
+[33m1c294cf[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m HEAD@{11}: commit: fixed typos, added content
+[33ma83e730[m HEAD@{12}: commit: fixed minor issues
+[33m937be29[m HEAD@{13}: commit: centered background section, added more todo, messed with some of the functionality
+[33m4d911e9[m HEAD@{14}: merge origin/main: Merge made by the 'ort' strategy.
+[33maacc1cd[m HEAD@{15}: checkout: moving from main to main
+[33maacc1cd[m HEAD@{16}: checkout: moving from main to main
+[33maacc1cd[m HEAD@{17}: reset: moving to origin/main
+[33m712ae7f[m HEAD@{18}: Branch: renamed refs/heads/main to refs/heads/main
+[33m712ae7f[m HEAD@{20}: Branch: renamed refs/heads/main to refs/heads/main
+[33m712ae7f[m HEAD@{22}: Branch: renamed refs/heads/master to refs/heads/main
+[33m712ae7f[m HEAD@{24}: commit (initial): first commit
