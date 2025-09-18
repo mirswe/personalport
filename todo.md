@@ -11,14 +11,14 @@
 ## Todo
 
         ### main functionality
-        - [ ] remove or temp hide the experience page, just showing my education and my skills
+        - [x] remove or temp hide the experience page, just showing my education and my skills
         - [ ] think about adding a 404 page
-        - [ ] integrating with node js and learning routing
+        - [ ] integrating with nextjs and learning routing
         - [ ] integrate a smooth transition between pages (form about me to projects, and etc.)
         - [ ] creating comments around the html, css, and js to explain what each section is for and how it works
         - [ ] add my linkedin profile picture to my site tab photo
-        - [ ] creating a dark mode
-        - [ ] think about experimentig/adding tailwind
+        ~~- [ ] creating a dark mode~~ (not doing this, no point)
+        - [ ] think about experimenting/adding tailwind
         - [x] blurring and unblurring the bottom of the page as you scroll down
         ### about me page
     - [x] fill out education and experience
