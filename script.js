@@ -67,6 +67,33 @@ window.addEventListener('load', () => {
     showSection('about'); // Always start with about section
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const body = document.body;
+    
+    function handleScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        
+        // Calculate how close we are to the bottom (0 = at bottom, 1 = at top)
+        const distanceFromBottom = documentHeight - (scrollTop + windowHeight);
+        
+        // Define the threshold for when to start fading (e.g., 100px from bottom)
+        const fadeThreshold = 30;
+        
+        if (distanceFromBottom <= fadeThreshold) {
+            body.classList.add('at-bottom');
+        } else {
+            body.classList.remove('at-bottom');
+        }
+    }
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+    
+    // Check initial state
+    handleScroll();
+});
 // Dark mode toggle functionality
 // const darkModeToggle = document.getElementById('darkModeToggle');
 // const body = document.body;

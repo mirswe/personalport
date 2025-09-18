@@ -19,6 +19,28 @@ body {
     padding: 0;
     /* removes default spacing around the body */
 }
+body::after {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(to top, 
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.7) 30%,
+        rgba(255, 255, 255, 0.3) 60%,
+        transparent 100%
+    );
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+body.at-bottom::after {
+    opacity: 0;
+}
 
 
 /* header section */
@@ -742,3 +764,4 @@ body.dark-mode .sun-beams {
     transform-origin: center;
     transition: transform 0.5s ease, opacity 0.5s ease;
 } */
+

@@ -19,7 +19,7 @@
         - [ ] add my linkedin profile picture to my site tab photo
         - [ ] creating a dark mode
         - [ ] think about experimentig/adding tailwind
-        - [ ] blurring and unblurring the bottom of the page as you scroll down
+        - [x] blurring and unblurring the bottom of the page as you scroll down
         ### about me page
     - [x] fill out education and experience
     - [x] add skills
